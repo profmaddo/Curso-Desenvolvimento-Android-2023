@@ -3,6 +3,7 @@ package devandroid.maddo.applistacurso.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.maddo.applistacurso.R;
 import devandroid.maddo.applistacurso.model.Pessoa;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setSobreNome("Alves");
         outraPessoa.setCursoDesejado("Java");
         outraPessoa.setTelefoneContato("11-99223344");
+/*
 
         dadosPessoa = "Primeiro nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
@@ -51,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += outraPessoa.getCursoDesejado();
         dadosOutraPessoa += " Telefone de Contato: ";
         dadosOutraPessoa += outraPessoa.getTelefoneContato();
+*/
 
 
-
-        int parada = 0;
-
+        Log.i("POOAndroid","Objeto pessoa: "+pessoa.toString());
+        Log.i("POOAndroid","Objeto outraPessoa: "+outraPessoa.toString());
 
 
 
