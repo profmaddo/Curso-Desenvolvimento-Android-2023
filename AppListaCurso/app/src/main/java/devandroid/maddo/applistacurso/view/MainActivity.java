@@ -17,22 +17,16 @@ import devandroid.maddo.applistacurso.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
 
-
     SharedPreferences preferences;
     public static final String NOME_PREFERENCES = "pref_listavip";
-
     PessoaController controller;
 
     Pessoa pessoa;
     Pessoa outraPessoa;
 
- 
-
     String dadosPessoa; // pascalCase - camelCase
     String dadosOutraPessoa;
 
-
- 
     EditText editPrimeiroNome;
     EditText editSobreNomeAluno;
     EditText editNomeCurso;
@@ -110,12 +104,10 @@ public class MainActivity extends AppCompatActivity {
 
                 controller.salvar(pessoa);
 
- 
             }
         });
 
         Log.i("POOAndroid", "Objeto pessoa: " + pessoa.toString());
-
 
     }
 }
