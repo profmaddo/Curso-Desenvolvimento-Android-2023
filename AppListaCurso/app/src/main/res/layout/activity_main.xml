@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
-<<<<<<< HEAD
-    <TextView
-        android:id="@+id/txtTituloApp"
-=======
+ 
+ 
+ 
     <TextView android:id="@+id/txtTituloApp"
->>>>>>> origin/release
+ 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/vermelho"
@@ -24,12 +23,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
-<<<<<<< HEAD
+ 
+ 
     <EditText
         android:id="@+id/editPrimeiroNome"
-=======
+ 
     <EditText android:id="@+id/editPrimeiroNome"
->>>>>>> origin/release
+ 
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
@@ -41,12 +41,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloApp" />
 
-<<<<<<< HEAD
+ 
+  
     <EditText
         android:id="@+id/editSobreNomeAluno"
-=======
+ 
     <EditText android:id="@+id/editSobreNomeAluno"
->>>>>>> origin/release
+ 
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
@@ -56,13 +57,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome" />
-
-<<<<<<< HEAD
-    <EditText
-        android:id="@+id/editNomeCurso"
-=======
+ 
+ 
+ 
+ 
     <EditText android:id="@+id/editNomeCurso"
->>>>>>> origin/release
+ 
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
@@ -73,12 +73,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editSobreNomeAluno" />
 
-<<<<<<< HEAD
-    <EditText
-        android:id="@+id/editTelefoneContato"
-=======
+ 
+ 
+ 
     <EditText android:id="@+id/editTelefoneContato"
->>>>>>> origin/release
+ 
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
@@ -88,13 +87,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNomeCurso" />
-
-<<<<<<< HEAD
-    <Button
-        android:id="@+id/btnLimpar"
-=======
+ 
+ 
     <Button android:id="@+id/btnLimpar"
->>>>>>> origin/release
+ 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

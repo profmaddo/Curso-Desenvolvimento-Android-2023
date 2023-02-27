@@ -8,21 +8,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+ 
 
 import devandroid.maddo.applistacurso.R;
+import devandroid.maddo.applistacurso.controller.PessoaController;
 import devandroid.maddo.applistacurso.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
 
+    PessoaController controller;
+
     Pessoa pessoa;
     Pessoa outraPessoa;
 
+ 
 
     String dadosPessoa; // pascalCase - camelCase
     String dadosOutraPessoa;
 
 
+ 
     EditText editPrimeiroNome;
     EditText editSobreNomeAluno;
     EditText editNomeCurso;
@@ -37,7 +42,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        controller = new PessoaController();
+        controller.toString();
+
+
         pessoa = new Pessoa();
+ 
 
         // Atribuir conteúdo, dados, valores para o Objeto
         // Conforme o seu MODELO, TEMPLATE
@@ -45,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         pessoa.setSobreNome("Maddo");
         pessoa.setCursoDesejado("Android");
         pessoa.setTelefoneContato("11-99229191");
+ 
 
         outraPessoa = new Pessoa();
         outraPessoa.setPrimeiroNome("Luiz");
@@ -60,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
         btnLimpar = findViewById(R.id.btnLimpar);
         btnSalvar = findViewById(R.id.btnSalvar);
         btnFinalizar = findViewById(R.id.btnFinalizar);
-
 
         editPrimeiroNome.setText(outraPessoa.getPrimeiroNome());
         editSobreNomeAluno.setText(outraPessoa.getSobreNome());
@@ -96,12 +106,16 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, "Salvo " + pessoa.toString(), Toast.LENGTH_LONG).show();
 
+ 
+                controller.salvar(pessoa);
+
+ 
             }
         });
 
         Log.i("POOAndroid", "Objeto pessoa: " + pessoa.toString());
         Log.i("POOAndroid", "Objeto outraPessoa: " + outraPessoa.toString());
-
+ 
 
     }
 }
