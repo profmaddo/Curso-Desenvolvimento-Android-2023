@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+ 
 
 import devandroid.maddo.applistacurso.R;
 import devandroid.maddo.applistacurso.controller.PessoaController;
@@ -20,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
     Pessoa pessoa;
     Pessoa outraPessoa;
 
+ 
+
+    String dadosPessoa; // pascalCase - camelCase
+    String dadosOutraPessoa;
+
+
+ 
     EditText editPrimeiroNome;
     EditText editSobreNomeAluno;
     EditText editNomeCurso;
@@ -39,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         pessoa = new Pessoa();
+ 
+
+        // Atribuir conteúdo, dados, valores para o Objeto
+        // Conforme o seu MODELO, TEMPLATE
+        pessoa.setPrimeiroNome("Marco");
+        pessoa.setSobreNome("Maddo");
+        pessoa.setCursoDesejado("Android");
+        pessoa.setTelefoneContato("11-99229191");
+ 
 
         outraPessoa = new Pessoa();
         outraPessoa.setPrimeiroNome("Luiz");
@@ -89,13 +106,16 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, "Salvo " + pessoa.toString(), Toast.LENGTH_LONG).show();
 
+ 
                 controller.salvar(pessoa);
 
+ 
             }
         });
 
         Log.i("POOAndroid", "Objeto pessoa: " + pessoa.toString());
         Log.i("POOAndroid", "Objeto outraPessoa: " + outraPessoa.toString());
+ 
 
     }
 }
