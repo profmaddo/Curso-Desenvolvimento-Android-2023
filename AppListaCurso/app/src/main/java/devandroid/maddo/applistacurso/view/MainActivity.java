@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         controller = new PessoaController();
         controller.toString();
 
-
         pessoa = new Pessoa();
 
         outraPessoa = new Pessoa();
