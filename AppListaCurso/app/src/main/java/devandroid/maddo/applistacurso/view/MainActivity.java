@@ -22,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
     PessoaController controller;
 
     Pessoa pessoa;
-    Pessoa outraPessoa;
-
-    String dadosPessoa; // pascalCase - camelCase
-    String dadosOutraPessoa;
 
     EditText editPrimeiroNome;
     EditText editSobreNomeAluno;
