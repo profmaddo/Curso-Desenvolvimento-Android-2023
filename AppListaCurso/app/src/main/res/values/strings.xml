@@ -9,4 +9,5 @@
     <string name="txt_button_salvar">SALVAR</string>
     <string name="txt_button_finalizar">FINALIZAR</string>
     <string name="txtSelecione_um_curso">Selecione um curso...</string>
+    <string name="txt_selecione_um_curso">Selecione um curso...</string>
 </resources>
