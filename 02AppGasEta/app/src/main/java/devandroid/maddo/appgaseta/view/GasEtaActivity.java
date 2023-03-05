@@ -121,6 +121,8 @@ public class GasEtaActivity extends AppCompatActivity {
                 controller.salvar(combustivelGasolina);
                 controller.salvar(combustivelEtanol);
 
+
+
                 int parada = 0;
 
             }
