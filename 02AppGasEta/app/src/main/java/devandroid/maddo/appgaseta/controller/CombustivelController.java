@@ -3,6 +3,8 @@ package devandroid.maddo.appgaseta.controller;
 import android.content.ContentValues;
 import android.content.SharedPreferences;
 
+import java.util.List;
+
 import devandroid.maddo.appgaseta.database.GasEtaDB;
 import devandroid.maddo.appgaseta.model.Combustivel;
 import devandroid.maddo.appgaseta.view.GasEtaActivity;
@@ -46,6 +48,10 @@ public class CombustivelController extends GasEtaDB {
 
 
 
+    }
+
+    public List<Combustivel> getListaDeDados(){
+        return listarDados();
     }
 
     public void limpar(){
