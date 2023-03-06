@@ -59,6 +59,8 @@ public class GasEtaActivity extends AppCompatActivity {
 
      //   controller.alterar(objAlteracao);
 
+        controller.deletar(50);
+
         editGasolina = findViewById(R.id.editGasolina);
         editEtanol = findViewById(R.id.editEtanol);
 
